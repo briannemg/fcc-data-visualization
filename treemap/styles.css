@@ -1,0 +1,91 @@
+/* === Fonts & Global Reset === */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4f8, #d9e9f6);
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* === Treemap Container === */
+#treemap-container {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+}
+
+/* === Title & Description === */
+#title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  fill: #333;
+}
+
+#description {
+  font-size: 1.2rem;
+  fill: #666;
+}
+
+/* === Tooltip === */
+#tooltip {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+/* === Tiles === */
+.tile {
+  stroke: #fff;
+  stroke-width: 1px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.tile:hover {
+  transform: scale(1.02);
+  stroke: #222;
+}
+
+.tile-label {
+  font-family: "Quicksand", sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* === Legend === */
+#legend {
+  margin: 2rem auto 0;
+  display: block;
+}
+
+.legend-item {
+  stroke: #999;
+  stroke-width: 1px;
+}
+
+#legend text {
+  font-size: 0.8rem;
+  fill: #333;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

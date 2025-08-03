@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+#description {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.county {
+  stroke: #fff;
+  stroke-width: 0.5;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#legend {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
